@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jan ki Baat (JKB) – Peopleplus.ai × EkStep</title>
+  <meta name="description" content="Conversational AI for public good: voice-first, multilingual, inclusive, and safe.">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root { color-scheme: light; }
+    .shadow-inner-soft { box-shadow: inset 0 1px 3px rgba(0,0,0,.05); }
+    .ring-1 { box-shadow: 0 0 0 1px rgba(24,24,27,.08); }
+    .card { border-radius: 1rem; background: #fff; padding: 1.5rem; box-shadow: 0 1px 2px rgba(0,0,0,.05); }
+    .pill { display:inline-flex; align-items:center; gap:.5rem; border:1px solid #e5e7eb; padding:.25rem .75rem; border-radius:999px; background:#fff; font-size:.875rem; color:#374151; }
+  </style>
+</head>
+<body class="min-h-screen bg-zinc-50 text-zinc-800">
+  <!-- Nav -->
+  <header class="sticky top-0 z-20 bg-white/80 backdrop-blur border-b border-zinc-200">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 py-3">
+      <div class="flex items-center gap-3">
+        <img src="https://dummyimage.com/36x36/111827/ffffff&text=P+" alt="Peopleplus.ai" class="h-9 w-9 rounded-xl">
+        <img src="https://dummyimage.com/36x36/0f172a/ffffff&text=E" alt="EkStep" class="h-9 w-9 rounded-xl">
+        <span class="font-semibold">Jan ki Baat (JKB)</span>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-zinc-900">About</a>
+        <a href="#initiatives" class="hover:text-zinc-900">Initiatives</a>
+        <a href="#framework" class="hover:text-zinc-900">Testing</a>
+        <a href="#why-india" class="hover:text-zinc-900">Why India</a>
+        <a href="#use-cases" class="hover:text-zinc-900">Use cases</a>
+        <a href="#contact" class="hover:text-zinc-900">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 md:px-6 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-medium bg-white border border-zinc-200 rounded-full px-3 py-1 shadow-sm">
+          <i data-lucide="sparkles" class="h-4 w-4"></i> Conversational AI for Public Good
+        </div>
+        <h1 class="mt-4 text-3xl md:text-5xl font-semibold leading-tight text-zinc-900">
+          Jan ki Baat (JKB):
+          <span class="block text-zinc-600">Voice‑first conversations that meet people where they are</span>
+        </h1>
+        <p class="mt-4 text-zinc-600 max-w-prose">
+          Peopleplus.ai × EkStep are partnering to design, test, and deploy conversational AI—web, WhatsApp, and telephony—so last‑mile citizens can access services, benefits, and advice in their own language and style of speaking.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-2">
+          <span class="pill"><i data-lucide="mic" class="h-4 w-4"></i> Voice Bots (Indic Languages)</span>
+          <span class="pill"><i data-lucide="message-square" class="h-4 w-4"></i> Multimodal (Web/WA/IVR)</span>
+          <span class="pill"><i data-lucide="shield" class="h-4 w-4"></i> Safe &amp; Responsible AI</span>
+          <span class="pill"><i data-lucide="line-chart" class="h-4 w-4"></i> Testing &amp; Benchmarking</span>
+        </div>
+        <div class="mt-8 flex gap-3">
+          <a href="#initiatives" class="inline-flex items-center gap-2 rounded-2xl bg-zinc-900 text-white px-4 py-2 shadow">
+            <i data-lucide="megaphone" class="h-4 w-4"></i> Explore Initiatives
+          </a>
+          <a href="#contact" class="inline-flex items-center gap-2 rounded-2xl border border-zinc-300 bg-white px-4 py-2">
+            <i data-lucide="phone-call" class="h-4 w-4"></i> Get In Touch
+          </a>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] rounded-2xl bg-gradient-to-br from-zinc-200 to-zinc-100 shadow-inner-soft grid place-items-center">
+          <i data-lucide="mic" class="h-20 w-20"></i>
+        </div>
+        <div class="absolute -bottom-4 -right-4 bg-white rounded-2xl shadow p-3 border border-zinc-200">
+          <div class="text-xs text-zinc-600">Telephony · WhatsApp · Web</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section helper -->
+  <template id="card-template">
+    <div class="card ring-1"></div>
+  </template>
+
+  <!-- About -->
+  <section id="about" class="max-w-6xl mx-auto px-4 md:px-6 py-14">
+    <div class="mb-8">
+      <p class="uppercase tracking-wide text-sm text-zinc-500 mb-2">About the initiative</p>
+      <h2 class="text-2xl md:text-3xl font-semibold text-zinc-900">What is JKB?</h2>
+    </div>
+    <div class="grid gap-6">
+      <div class="card ring-1">
+        <p class="text-zinc-700 leading-relaxed">
+          Jan ki Baat (JKB) is a conversational AI program to collect feedback, deliver advisory, and help citizens complete tasks using natural speech. It focuses on Indic languages, low‑connectivity contexts, and culturally aware dialogue so that people can participate without needing to read or type.
+        </p>
+        <div class="mt-4 grid sm:grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200">
+            <i data-lucide="globe" class="h-4 w-4 mb-2"></i> 22+ official languages &amp; hundreds of dialects
+          </div>
+          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200">
+            <i data-lucide="mic" class="h-4 w-4 mb-2"></i> Code‑mixing (e.g., Hinglish) &amp; indirect speech
+          </div>
+          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200">
+            <i data-lucide="phone-call" class="h-4 w-4 mb-2"></i> Works over simple phone calls (no data needed)
+          </div>
+          <div class="p-3 rounded-xl bg-zinc-50 border border-zinc-200">
+            <i data-lucide="shield" class="h-4 w-4 mb-2"></i> Consent, privacy, and bias checks built‑in
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Initiatives -->
+  <section id="initiatives" class="max-w-6xl mx-auto px-4 md:px-6 py-14">
+    <div class="mb-8">
+      <p class="uppercase tracking-wide text-sm text-zinc-500 mb-2">Initiatives</p>
+      <h2 class="text-2xl md:text-3xl font-semibold text-zinc-900">Peopleplus.ai × EkStep: What we’re building</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card ring-1">
+        <h3 class="text-lg font-semibold mb-2">Citizen Conversations @ Scale</h3>
+        <p class="text-sm text-zinc-600">Outbound &amp; inbound calling to capture feedback and deliver timely guidance in agriculture, water, welfare, and more. Voice bots can match human engagement quality with IVR‑like scale and lower cost.</p>
+        <ul class="mt-4 list-disc list-inside text-sm text-zinc-700 space-y-1">
+          <li>Indic voice bots across Web/WhatsApp/Telephony</li>
+          <li>Dialects, slang, pauses, and interruptions handled gracefully</li>
+          <li>Structured data capture for insights and action</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <h3 class="text-lg font-semibold mb-2">Evolve Lab: Safe Sandbox &amp; Benchmarking</h3>
+        <p class="text-sm text-zinc-600">A two‑phase testing flow (Quick Scan → Deep Audit) to validate bots before launch, then monitor in production with observability and audits.</p>
+        <ul class="mt-4 list-disc list-inside text-sm text-zinc-700 space-y-1">
+          <li>Safe &amp; Responsible AI guardrails</li>
+          <li>Human‑like conversation quality metrics</li>
+          <li>Actionable dashboards, reports, and benchmarks</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Framework -->
+  <section id="framework" class="max-w-6xl mx-auto px-4 md:px-6 py-14">
+    <div class="mb-8">
+      <p class="uppercase tracking-wide text-sm text-zinc-500 mb-2">Quality you can trust</p>
+      <h2 class="text-2xl md:text-3xl font-semibold text-zinc-900">Testing &amp; Benchmarking Framework</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card ring-1">
+        <div class="flex items-center gap-2 mb-2"><i data-lucide="shield" class="h-5 w-5"></i><h4 class="font-medium">Safe &amp; Responsible AI</h4></div>
+        <ul class="text-sm text-zinc-700 space-y-1">
+          <li>Consent &amp; privacy checks</li>
+          <li>Bias, abuse, and unsafe tone detection</li>
+          <li>Cultural appropriateness</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <div class="flex items-center gap-2 mb-2"><i data-lucide="message-square" class="h-5 w-5"></i><h4 class="font-medium">Human‑like Conversation</h4></div>
+        <ul class="text-sm text-zinc-700 space-y-1">
+          <li>Handles dialects, slang, noise &amp; interruptions</li>
+          <li>Empathy, natural tone, and context retention</li>
+          <li>Low latency, avoids talking over users</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <div class="flex items-center gap-2 mb-2"><i data-lucide="line-chart" class="h-5 w-5"></i><h4 class="font-medium">Actionable Data &amp; Fit‑for‑Purpose</h4></div>
+        <ul class="text-sm text-zinc-700 space-y-1">
+          <li>Structured data capture; completion &amp; drop‑off rates</li>
+          <li>Benchmarks across ASR → LLM → TTS pipeline</li>
+          <li>Pre‑prod validation; prod audits &amp; observability</li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Common Failure Modes We Test</h4>
+        <ul class="text-sm text-zinc-700 space-y-1">
+          <li>ASR: accent/name errors, noise robustness</li>
+          <li>LLM: intent, logic, refusals/hallucinations</li>
+          <li>TTS: pronunciation, pace, naturalness</li>
+          <li>Dialogue: context loss, loops, over‑talking</li>
+          <li>UX: latency, awkward silences</li>
+          <li>Data: missed or malformed records</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Two‑Phase Flow</h4>
+        <ol class="text-sm text-zinc-700 list-decimal list-inside space-y-1">
+          <li><strong>Quick Scan</strong> – high‑volume triage across 5 key parameters</li>
+          <li><strong>Deep Audit</strong> – detailed error tagging (22+ issue types)</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why India -->
+  <section id="why-india" class="max-w-6xl mx-auto px-4 md:px-6 py-14">
+    <div class="mb-8">
+      <p class="uppercase tracking-wide text-sm text-zinc-500 mb-2">Context that matters</p>
+      <h2 class="text-2xl md:text-3xl font-semibold text-zinc-900">Why Conversational AI for India is Different</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Diversity at Scale</h4>
+        <p class="text-sm text-zinc-700">Massive linguistic diversity, code‑switching, and varied formalities require bots to adapt to how people actually speak—not just translate words.</p>
+        <ul class="mt-3 text-sm text-zinc-700 list-disc list-inside space-y-1">
+          <li>22+ official languages; hundreds of dialects</li>
+          <li>Hinglish &amp; other code‑mixed patterns</li>
+          <li>Relational address (e.g., “Priya ke papa”) &amp; festival cues</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Last‑mile Access</h4>
+        <p class="text-sm text-zinc-700">Voice works for low literacy and low‑connectivity environments. JKB supports simple phone calls (no internet) and WhatsApp or web when available.</p>
+        <ul class="mt-3 text-sm text-zinc-700 list-disc list-inside space-y-1">
+          <li>Feature‑phone compatibility</li>
+          <li>Low bandwidth, noisy settings</li>
+          <li>Inclusive by design</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use cases -->
+  <section id="use-cases" class="max-w-6xl mx-auto px-4 md:px-6 py-14">
+    <div class="mb-8">
+      <p class="uppercase tracking-wide text-sm text-zinc-500 mb-2">From pilots to scale</p>
+      <h2 class="text-2xl md:text-3xl font-semibold text-zinc-900">Illustrative Use Cases</h2>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Citizen Feedback</h4>
+        <p class="text-sm text-zinc-700">Capture water service feedback, welfare service experience, or grievance intent via natural conversation with structured handoff.</p>
+        <ul class="mt-3 text-sm text-zinc-700 list-disc list-inside space-y-1">
+          <li>Outbound surveys &amp; inbound hotlines</li>
+          <li>Dashboarding for program teams</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Agriculture Advisory</h4>
+        <p class="text-sm text-zinc-700">Provide timely, localized guidance to farmers (weather, soil, market, schemes) and enable actions through OAN‑integrated agents.</p>
+        <ul class="mt-3 text-sm text-zinc-700 list-disc list-inside space-y-1">
+          <li>Conversational access to DPI – OAN</li>
+          <li>Multilingual models &amp; domain glossaries</li>
+        </ul>
+      </div>
+      <div class="card ring-1">
+        <h4 class="font-medium mb-2">Citizen Support &amp; Triage</h4>
+        <p class="text-sm text-zinc-700">Route to human agents when needed; collect consent; maintain empathy and transparency.</p>
+        <ul class="mt-3 text-sm text-zinc-700 list-disc list-inside space-y-1">
+          <li>Safe escalation &amp; audit trails</li>
+          <li>Production observability</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / Contact -->
+  <section id="contact" class="max-w-6xl mx-auto px-4 md:px-6 py-14">
+    <div class="mb-8">
+      <p class="uppercase tracking-wide text-sm text-zinc-500 mb-2">Get in touch</p>
+      <h2 class="text-2xl md:text-3xl font-semibold text-zinc-900">Partner with us</h2>
+    </div>
+    <div class="grid md:grid-cols-2 gap-6 items-start">
+      <div class="card ring-1">
+        <p class="text-sm text-zinc-700">We’re co‑building JKB with governments, NGOs, and ecosystem partners. If you’d like to pilot, evaluate vendors, or integrate your voice AI stack, let’s talk.</p>
+        <ul class="mt-4 text-sm text-zinc-700 list-disc list-inside space-y-1">
+          <li>Pre‑prod testing &amp; benchmarks</li>
+          <li>Production audits &amp; observability</li>
+          <li>Domain‑specific adaptation for Indic languages</li>
+        </ul>
+      </div>
+      <form class="card ring-1 bg-zinc-50">
+        <div>
+          <label class="text-xs text-zinc-500">Name</label>
+          <input class="w-full mt-1 rounded-xl border border-zinc-300 px-3 py-2 bg-white" placeholder="Your name">
+        </div>
+        <div class="mt-3">
+          <label class="text-xs text-zinc-500">Email</label>
+          <input class="w-full mt-1 rounded-xl border border-zinc-300 px-3 py-2 bg-white" placeholder="you@example.org">
+        </div>
+        <div class="mt-3">
+          <label class="text-xs text-zinc-500">How can we help?</label>
+          <textarea class="w-full mt-1 rounded-xl border border-zinc-300 px-3 py-2 bg-white" rows="3" placeholder="Pilot, evaluation, integration…"></textarea>
+        </div>
+        <button type="button" id="submitBtn" class="mt-3 inline-flex items-center gap-2 justify-center rounded-2xl bg-zinc-900 text-white px-4 py-2 shadow">
+          <i data-lucide="check-circle-2" class="h-4 w-4"></i> Submit
+        </button>
+        <p id="thanks" class="hidden text-xs text-emerald-600 mt-2">Thanks! This demo doesn’t send email, but we’ll wire it to your backend/CRM.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-200">
+    <div class="max-w-6xl mx-auto px-4 md:px-6 py-8 text-sm text-zinc-500 flex flex-col md:flex-row items-center justify-between gap-3">
+      <div>© <span id="year"></span> Peopleplus.ai × EkStep · JKB</div>
+      <div class="flex items-center gap-4">
+        <a href="#about" class="hover:text-zinc-700">About</a>
+        <a href="#initiatives" class="hover:text-zinc-700">Initiatives</a>
+        <a href="#framework" class="hover:text-zinc-700">Testing</a>
+        <a href="#contact" class="hover:text-zinc-700">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Icons
+    lucide.createIcons();
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Demo submit
+    document.getElementById('submitBtn').addEventListener('click', () => {
+      document.getElementById('thanks').classList.remove('hidden');
+    });
+  </script>
+</body>
+</html>
